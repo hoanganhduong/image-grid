@@ -79,9 +79,7 @@ img {
 
   .photo:last-child {
     display: block;
-    width: 33.3333%
+    width: 33.3333%;
   }
-}
-
 
 }
