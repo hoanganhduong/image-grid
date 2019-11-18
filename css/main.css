@@ -26,8 +26,6 @@ img {
   display: block;
 }
 
-
-
 @media only screen and (min-width: 20em) {
 
   .photo:nth-child(2),
@@ -37,17 +35,18 @@ img {
 
 
 }
+
 @media only screen and (min-width: 25em) {
 
   section {
-   display: flex;
-   flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .photo:nth-child(2),
   .photo:last-child {
-   display: block;
-}
+    display: block;
+  }
 
   .photo:nth-child(2),
   .photo:nth-child(3),
@@ -71,6 +70,7 @@ img {
   }
 
 }
+
 @media only screen and (min-width: 60em) {
 
   .photo:first-of-type {
