@@ -10,6 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  line-height: 1.3;
 }
 
 *, *::before, *::after {
@@ -17,5 +18,69 @@ html {
 }
 
 body {
-  margin: 0:
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ .photo {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+.photo:nth-child(2),
+.photo:last-child {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  section {
+   display: flex;
+   flex-wrap: wrap;
+  }
+
+  .photo:nth-child(2),
+  .photo:last-child {
+   display: block;
+}
+
+  .photo:first-child {
+    flex-wrap: nowrap;
+  }
+
+  .photo:nth-child(2),
+  .photo:nth-child(3),
+  .photo:nth-child(4),
+  .photo:last-child {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .photo:first-child {
+    flex-wrap: nowrap;
+  }
+
+  .photo:nth-child(2),
+  .photo:nth-child(3),
+  .photo:nth-child(4),{
+    display: flex;
+    width: 33\.3333%;
+  }
+
+
+  .photo:last-child {
+    display: none;
+  }
+
+
+
+
+
 }
